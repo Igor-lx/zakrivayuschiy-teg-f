@@ -1,6 +1,13 @@
 :root {
+  /*шрифты*/
+
   --main-font: "Inter";
   --accent-font: "PressStart2P";
   --font-weight_global: 400;
   --font-weight_header: 700;
+
+  /*цвета*/
+
+  --text-color: rgba(0, 0, 0, 1);
+  --background-color: rgba(255, 255, 255, 1);
 }
