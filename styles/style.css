@@ -15,6 +15,9 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--text-color, rgba(0, 0, 0, 1));
   font-family: var(--main-font, sans-serif);
   background-color: var(--background-color, rgba(255, 255, 255, 1));
@@ -25,3 +28,58 @@
   min-block-size: 100dvb;
   font-variation-settings: "wdth" var(--font-weight_global);
 }
+
+/* ===== общие стили и выравнивание для *всех* блоков ===== */
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: clamp(375px, calc((100vw - 4px) * (700 / 1440)), 700px);
+  border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
+  background-color: var(--background-color, rgba(255, 255, 255, 1));
+}
+
+/* ------------------------------------------------------- */
+
+.header {
+  align-items: center;
+  text-transform: uppercase;
+  margin: 100px 0;
+  font-family: var(--accent-font, sans-serif);
+  line-height: normal;
+  max-height: 368px;
+  min-height: 323px;
+}
+
+.header_logo {
+  margin: 136px 0 20px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+}
+
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.theme-menu__button {
+  position: relative;
+  border: none;
+  text-transform: uppercase;
+  background: transparent;
+  font-size: 14px;
+}
+
+/*
+@media (width <= 375px) {
+  :root {
+
+  }
+}
+*/
