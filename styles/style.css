@@ -219,6 +219,8 @@
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-height: 51px;
   font-family: var(--accent-font, sans-serif);
+  color: var(--text-color, rgba(0, 0, 0, 1));
+  background-color: var(--background-color, rgba(255, 255, 255, 1));
   line-height: 21.6px;
   font-size: 14px;
   transition: box-shadow 0.3s ease;
