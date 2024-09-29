@@ -34,7 +34,7 @@
 .block {
   display: flex;
   flex-direction: column;
-  width: clamp(375px, calc((100vw - 4px) * (700 / 1440)), 700px);
+  width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
   background-color: var(--background-color, rgba(255, 255, 255, 1));
 }
@@ -52,11 +52,12 @@
 }
 
 .header_logo {
-  margin: 136px 0 20px;
+  margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header__title {
+  margin-block-start: 20px;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
@@ -75,7 +76,7 @@
   background: transparent;
   font-size: 14px;
 }
-
+/* ------------------------------------------------------ */
 /*
 @media (width <= 375px) {
   :root {
