@@ -31,7 +31,7 @@
 
   <body class="page">
     <header class="header block">
-      <span class="header_logo">&lt;/HTML&gt;</span>
+      <span class="header__logo">&lt;/HTML&gt;</span>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -59,14 +59,39 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="content">
       <article class="content-card block">
         <h2 class="content-card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="image-section">
-          <span class="label">&lt;/html&gt;</span>
-          <img class="image filter-sepia" src=""
+        <div class="content-card__picture">
+          <span class="content-card__picture_label">&lt;/html&gt;</span>
+          <picture class="content-card__picture_sprint-zero filter-1">
+            <source
+              srcset="./images/ice-cream-mobile.png"
+              type="image/png"
+              media="(max-width: 376px)"
+            />
+            <source
+              srcset="./images/ice-cream.png"
+              type="image/png"
+              media="(min-width: 376px)"
+            />
+            <img
+              class="picture"
+              src="./images/ice-cream.png"
+              alt="улыбаюшаяся желтая миска с прищуренными глазами."
+              loading="lazy"
+            />
+          </picture>
+        </div>
+        <div class="content-card__text">
+          <p>
+            Это было самое начало пути. На этом этапе важно было проникнуться
+            основами и настроиться на учёбу. И, возможно, подумать, как новые
+            знания могут повлиять на ваше будущее.
+          </p>
+          <p>Место для ваших воспоминаний о начале обучения.</p>
         </div>
       </article>
     </main>
