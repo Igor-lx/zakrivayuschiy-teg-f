@@ -26,7 +26,7 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: "wdth" var(--font-weight_global);
+  font-variation-settings: "wght" var(--font-weight_global, 400);
 }
 
 /* ===== общие стили и выравнивание для *всех* блоков ===== */
@@ -43,12 +43,12 @@
 
 .header {
   align-items: center;
-  text-transform: uppercase;
+  min-height: 323px;
+  max-height: 368px;
   margin: 100px 0;
   font-family: var(--accent-font, sans-serif);
   line-height: normal;
-  max-height: 368px;
-  min-height: 323px;
+  text-transform: uppercase;
 }
 
 .header__logo {
@@ -72,12 +72,71 @@
 .theme-menu__button {
   position: relative;
   border: none;
+  font-size: 14px;
   text-transform: uppercase;
   background: transparent;
-  font-size: 14px;
 }
 
 /* ------------------------------------------------------------- */
+
+.content-card__title {
+  font-variation-settings: "wght" var(--font-weight_header, 700);
+  line-height: 21px;
+  padding: 5px 10px;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /*max-height: 696px;*/
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px;
+  line-height: 21px;
+  font-size: 18px;
+}
+
+.content-card__picture {
+  position: relative;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: var(--text-color, rgba(0, 0, 0, 1));
+}
+
+.content-card__picture_label {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: var(--accent-font, sans-serif);
+  color: var(--text-color, rgba(0, 0, 0, 1));
+  text-shadow: -1px 0px var(--background-color, rgba(255, 255, 255, 1)),
+    0px 1px var(--background-color, rgba(255, 255, 255, 1)),
+    1px 0px var(--background-color, rgba(255, 255, 255, 1)),
+    0px -1px var(--background-color, rgba(255, 255, 255, 1));
+  font-size: 14px;
+  top: 25px;
+  right: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@supports (
+  (text-stroke: 1px var(--background-color, rgba(255, 255, 255, 1))) or
+    (-webkit-text-stroke: 1px var(--background-color, rgba(255, 255, 255, 1)))
+) {
+  .content-card__picture_label {
+    -webkit-text-stroke: 1px var(--background-color, rgba(255, 255, 255, 1));
+    text-stroke: 1px var(--background-color, rgba(255, 255, 255, 1));
+    text-shadow: none;
+  }
+}
 
 /* ------------------------------------------------------------- */
 
@@ -117,9 +176,12 @@
 
 /* ----------------------- состояния --------------------------- */
 
-/*L */
-
 /*H */
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+/*F */
 
 /*A */
 
