@@ -77,6 +77,7 @@
   font-size: 14px;
   text-transform: uppercase;
   background: transparent;
+  transition: opacity 0.3s ease;
 }
 
 /* ============ */
@@ -95,6 +96,24 @@
   inline-size: 14px;
   block-size: 14px;
 }
+
+/* ========== */
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  background-color: var(--text-color, rgba(0, 0, 0, 1));
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+  height: 2px;
+  width: 100%;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+/* ===========*/
 
 /* ------------------------------------------------------------- */
 .article {
@@ -187,6 +206,29 @@
 
 /* ------------------------------------------------------------- */
 
+.footer {
+  margin-block-end: 105px;
+}
+
+.footer__button {
+  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+}
+
+.footer__button_text {
+}
+
+.popup_window {
+}
+
+.popup_window_content {
+}
+
+.popup_window_title {
+}
+
+.popup_window__button-text {
+}
+
 /* ------------------------ фильтры ---------------------------- */
 .filter_sepia {
   filter: sepia(45%);
@@ -219,18 +261,22 @@
 .filter_mishmash {
   filter: saturate(150%) brightness(150%) contrast(150%) blur(3px);
 }
+
 /* ------------------------------------------------------------- */
 
 /* ----------------------- состояния --------------------------- */
 
-/*H */
-.theme-menu__button:hover {
+/*--- Hover --- */
+
+/* --- Focus --- */
+.theme-menu__button:hover,
+.theme-menu__button:focus,
+.theme-menu__button:focus-visible {
+  outline: none;
   opacity: 0.6;
 }
 
-/*F */
-
-/*A */
+/* --- Active --- */
 
 /* ----------------------- состояния --------------------------- */
 
