@@ -165,15 +165,21 @@
 .content-card__button {
   align-self: flex-end;
   padding: 0 25px 25px 0;
+  display: flex;
+  align-items: center;
 }
 
 .card__icon-button {
+  border: none;
+  background-color: transparent;
 }
 
 .card__like-button {
   font-family: var(--accent-font, sans-serif);
+  border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
   min-inline-size: 130px;
   min-block-size: 38px;
+  background-color: transparent;
 }
 
 .button__text {
