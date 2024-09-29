@@ -43,17 +43,32 @@
 /* === общие стили и выравнивание для кнопок like и save === */
 
 .button_global-style {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 7px;
-  line-height: 12.6px;
-  font-size: 14px;
-  color: var(--text-color, rgba(0, 0, 0, 1));
   border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
+  color: var(--text-color, rgba(0, 0, 0, 1));
   font-family: var(--accent-font, sans-serif);
+  font-size: 14px;
+  line-height: 12.6px;
   background-color: var(--background-color, rgba(255, 255, 255, 1));
   transition: box-shadow 0.3s ease;
+}
+
+/*=== заливка кнопок - для общего класса кнопок === */
+
+.button_global-style::before {
+  content: "";
+  position: absolute;
+  /*inset:0*/
+  background-color: var(--text-color, rgba(0, 0, 0, 1));
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 /* ------------------------------------------------------------- */
@@ -289,6 +304,10 @@
 .theme-menu__button:focus,
 .theme-menu__button:focus-visible {
   opacity: 0.6;
+}
+
+.button_global-style:hover::before {
+  transform: scaleX(1);
 }
 
 /* --- Focus --- */
