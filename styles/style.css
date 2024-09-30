@@ -1,5 +1,5 @@
 /* Здесь вы напишете основную часть стилей страницы.
-
+.card__icon-button
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  margin-block-end: 50px;
+  margin-block-end: 51px;
   border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
   background-color: var(--background-color, rgba(255, 255, 255, 1));
 }
@@ -214,7 +214,6 @@
 /*  кнопка */
 .content-card__button-container {
   display: flex;
-  align-items: center;
   align-self: flex-end;
   padding: 0 25px 25px 0;
 }
