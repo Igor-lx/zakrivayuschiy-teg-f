@@ -34,7 +34,6 @@
 .block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
   background-color: var(--background-color, rgba(255, 255, 255, 1));
@@ -82,11 +81,10 @@
 
 .header {
   align-items: center;
-  min-height: 323px;
-  max-height: 368px;
+  min-block-size: 323px;
+  max-block-size: 368px;
   margin: 100px 0;
   font-family: var(--accent-font, sans-serif);
-  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -103,7 +101,6 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 7px;
   margin: 22px 0;
   padding-inline-start: 20px;
@@ -169,7 +166,6 @@
   flex-direction: column;
   gap: 27px;
   padding: 25px;
-  font-size: 18px;
   line-height: 21px;
 }
 
@@ -247,13 +243,10 @@
 
 /* ------------------------------------------------ */
 
-.save-dialog {
-  margin-block-end: 105px;
-}
-
 .save-dialog__button {
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-block-size: 51px;
+  margin-block-end: 105px;
 }
 
 .floppy-icon {
