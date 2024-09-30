@@ -263,21 +263,14 @@
 /*  ------------- Pop-Up window ------------ */
 
 .popup_window {
+  width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
   padding: 31px;
   color: var(--text-color, rgba(0, 0, 0, 1));
   background-color: var(--background-color, rgba(255, 255, 255, 1));
-  width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
 }
 
 .popup_window::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
-}
-
-.popup_window_block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
 }
 
 .popup_window_content {
@@ -293,7 +286,6 @@
 }
 .popup_window_title {
   font-family: var(--accent-font, sans-serif);
-  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -302,6 +294,9 @@
 }
 
 .popup-button {
+  min-width: 100%;
+  margin-block-start: 30px;
+  padding: 9px;
 }
 
 /* ------------------------ фильтры ---------------------------- */
