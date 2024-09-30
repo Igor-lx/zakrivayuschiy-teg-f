@@ -251,6 +251,8 @@
 
 .floppy-icon {
   mix-blend-mode: difference;
+  max-inline-size: 21px;
+  max-block-size: 21px;
 }
 
 /*  ------------- Pop-Up window ------------ */
@@ -273,10 +275,12 @@
 }
 
 .popup_floppy-icon {
+  mix-blend-mode: difference;
   flex-shrink: 0;
-  inline-size: 39px;
-  block-size: 39px;
+  max-inline-size: 39px;
+  max-block-size: 39px;
 }
+
 .popup_window_title {
   font-family: var(--accent-font, sans-serif);
   font-size: 14px;
@@ -358,8 +362,6 @@
 .button_global-style:focus-visible {
   box-shadow: 2px 2px 0 var(--text-color, rgba(0, 0, 0, 1));
 }
-
-/* LVHA  ---- A  --- */
 
 /* ------------------------------------------------------------- */
 
