@@ -26,6 +26,10 @@
 
 /* ==============  HEART  ================= */
 
+.sparks {
+  opacity: 0;
+}
+
 .heart {
   transform-origin: center;
 }
