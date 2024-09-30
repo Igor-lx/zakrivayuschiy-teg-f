@@ -13,6 +13,8 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+/* ------------- header arrow -------------- */
+
 @keyframes swing {
   0% {
     transform: translateX(0);
@@ -21,3 +23,33 @@
     transform: translateX(4px);
   }
 }
+
+/* ---------------- heart ----------------- */
+
+.heart {
+  transform-origin: center;
+}
+
+/* LVHA  ---- H  --- */
+
+.like-icon .core {
+  transition: fill 0.3s linear 0.03s;
+  fill: var(--background-color, rgba(255, 255, 255, 1));
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s linear;
+  fill: var(--background-color, rgba(255, 255, 255, 1));
+}
+
+.like-icon:hover .core {
+  fill: var(--text-color, rgba(0, 0, 0, 1));
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--text-color, rgba(0, 0, 0, 1));
+  transition: fill 0.3s linear 0.05s;
+}
+
+/* LVHA  --- A --- */

@@ -309,7 +309,7 @@
 
 /* ----------------------- состояния --------------------------- */
 
-/*--- Hover --- */
+/* LVHA  ---- H  --- */
 
 .theme-menu__button:hover,
 .theme-menu__button:focus,
@@ -321,7 +321,7 @@
   transform: scaleX(1);
 }
 
-/* --- Focus --- */
+/* LVHA --- Focus --- */
 
 .theme-menu__button:focus,
 .theme-menu__button:focus-visible,
@@ -339,7 +339,7 @@
   box-shadow: 2px 2px 0 var(--text-color, rgba(0, 0, 0, 1));
 }
 
-/* --- Active --- */
+/* LVHA  ---- A  --- */
 
 /* ------------------------------------------------------------- */
 
