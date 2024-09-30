@@ -97,7 +97,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 7px;
   margin: 22px 0;
   padding-inline-start: 20px;
 }
@@ -220,6 +220,7 @@
 }
 
 .card__icon-button {
+  padding-block-start: 10px;
   margin-inline-end: 5px;
   border: 2px solid transparent;
   background-color: transparent;
