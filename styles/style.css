@@ -74,8 +74,8 @@
 /*=== инверсия текста для всех кнопок === */
 
 .button__text {
-  mix-blend-mode: difference;
   color: var(--button-text_hover-color, rgba(255, 255, 255, 1));
+  mix-blend-mode: difference;
 }
 
 /* ------------------------------------------------------------- */
@@ -260,16 +260,48 @@
   mix-blend-mode: difference;
 }
 
+/*  ------------- Pop-Up window ------------ */
+
 .popup_window {
+  padding: 31px;
+  color: var(--text-color, rgba(0, 0, 0, 1));
+  background-color: var(--background-color, rgba(255, 255, 255, 1));
+  width: clamp(21.3125rem, 20.9604rem + 1.5023vw, 22.3125rem);
+}
+
+.popup_window::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.popup_window_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 
 .popup_window_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
+.popup_floppy-icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
 .popup_window_title {
+  font-family: var(--accent-font, sans-serif);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  /* max-inline-size: 234px;
+  max-block-size: 195px;*/
 }
 
-.popup_window__button-text {
+.popup-button {
 }
 
 /* ------------------------ фильтры ---------------------------- */
