@@ -220,12 +220,11 @@
 }
 
 .card__icon-button {
-  padding-block-start: 10px;
-  margin-inline-end: 5px;
+  margin-inline-end: 2px; /*для красоты, чтобы в фокусе бордер не сливался с кнопкой*/
   border: 2px solid transparent;
   background-color: transparent;
   transition: border 0.3s ease;
-  min-block-size: 38px;
+  max-block-size: 38px;
 }
 
 .card__like-button {
