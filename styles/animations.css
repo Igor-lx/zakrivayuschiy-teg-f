@@ -13,9 +13,9 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-/* ------------- header arrow -------------- */
+/* ============= header arrow ============== */
 
-@keyframes swing {
+@keyframes header_arrow-swing {
   0% {
     transform: translateX(0);
   }
@@ -24,10 +24,15 @@
   }
 }
 
-/* ===================  HEART  ====================*/
+/* ==============  HEART  ================= */
 
 .heart {
   transform-origin: center;
+}
+
+.like-icon .contour {
+  fill: var(--text-color, rgba(0, 0, 0, 1));
+  transition: fill 0.1s linear;
 }
 
 /* LVHA  ---- H  --- */
@@ -79,4 +84,34 @@
 .like-icon.is-liked .contour {
   fill: var(--heart-fill_color, rgba(255, 0, 0, 1));
   transition: fill 0.3s linear 0.06s;
+}
+
+/*----*/
+
+@keyframes heart-scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-scale 0.3s ease-in 0.1s 1 alternate;
+}
+
+/*----*/
+
+@keyframes sparks-visibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-visibility 0.3s ease-in 0.3s 1 alternate;
 }
