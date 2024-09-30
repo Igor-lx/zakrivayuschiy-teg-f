@@ -71,6 +71,13 @@
   block-size: 100%;
 }
 
+/*=== инверсия текста для всех кнопок === */
+
+.button__text {
+  mix-blend-mode: difference;
+  color: var(--button-text_hover-color, rgba(255, 255, 255, 1));
+}
+
 /* ------------------------------------------------------------- */
 
 .header {
@@ -232,23 +239,19 @@
   min-block-size: 38px;
 }
 
-.button__text {
-  mix-blend-mode: difference;
-  color: var(--button-text_hover-color, rgba(255, 255, 255, 1));
-}
-
 /* ------------------------------------------------------------- */
 
-.footer {
+.save-dialog {
   margin-block-end: 105px;
 }
 
-.footer__button {
+.save-dialog__button {
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-block-size: 51px;
 }
 
-.footer__button_text {
+.floppy-icon {
+  mix-blend-mode: difference;
 }
 
 .popup_window {
@@ -263,9 +266,6 @@
 .popup_window__button-text {
 }
 
-.floppy-icon {
-  mix-blend-mode: difference;
-}
 /* ------------------------ фильтры ---------------------------- */
 .filter_sepia {
   filter: sepia(45%);
