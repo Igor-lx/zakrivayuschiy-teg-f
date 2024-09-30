@@ -13,6 +13,8 @@
 
   --button-text_hover-color: rgba(255, 255, 255, 1);
 
+  --heart-fill_color: rgba(255, 0, 0, 1);
+
   --background-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
