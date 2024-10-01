@@ -316,7 +316,7 @@
 }
 
 .filter_mishmash {
-  filter: saturate(150%) brightness(150%) contrast(150%) blur(3px);
+  filter: saturate(150%) brightness(150%) contrast(150%) blur(1px);
 }
 
 /* ------------------- состояния ------------------- */
