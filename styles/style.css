@@ -172,6 +172,8 @@
   overflow: hidden;
   inline-size: 100%;
   block-size: 100%;
+  max-inline-size: 696px;
+  max-block-size: 696px;
 }
 
 .content-card__picture_label {
