@@ -290,11 +290,11 @@
 
 /* ------------------- фильтры ------------------- */
 .filter_pre-start {
-  filter: sepia(45%);
+  filter: sepia(50%);
 }
 
 .filter_first_start {
-  filter: blur(1px);
+  filter: blur(2px);
 }
 
 .filter_fail {
