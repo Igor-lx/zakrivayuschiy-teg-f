@@ -32,7 +32,7 @@
 
   <body class="page">
     <header class="header block">
-      <span class="header__logo">&lt;/html&gt;</span>
+      <a class="header__logo">&lt;/html&gt;</a>
       <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
@@ -108,6 +108,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -194,6 +195,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -276,6 +278,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -358,6 +361,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -444,6 +448,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -527,6 +532,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -611,6 +617,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -694,6 +701,7 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   class="like-icon"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -743,16 +751,14 @@
         <use xlink:href="./svg/floppy.svg#floppy"></use>
       </svg>
 
-      <span class="button__text">Сохранить на память</span>
+      <p class="button__text">Сохранить на память</p>
     </button>
     <dialog id="popup" class="popup_window_container">
       <div class="popup_window__content_container">
         <svg class="popup_window__floppy-icon">
           <use xlink:href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="popup_window__title"
-          >Вставьте дискету, чтобы продолжить</span
-        >
+        <p class="popup_window__title">Вставьте дискету, чтобы продолжить</p>
       </div>
 
       <form method="dialog">

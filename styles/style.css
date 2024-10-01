@@ -46,7 +46,7 @@
   gap: 7px;
   border: 2px solid var(--text-color, rgba(0, 0, 0, 1));
   color: var(--text-color, rgba(0, 0, 0, 1));
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
   line-height: 12.6px;
   background-color: var(--background-color, rgba(255, 255, 255, 1));
@@ -69,6 +69,7 @@
 .button__text {
   color: var(--button-text_hover-color, rgba(255, 255, 255, 1));
   mix-blend-mode: difference;
+  font-size: 14px;
 }
 
 /* ==============================================================*/
@@ -79,10 +80,8 @@
 .header {
   align-items: center;
   margin: 100px 0;
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   text-transform: uppercase;
-  min-block-size: 323px;
-  max-block-size: 368px;
 }
 
 .header__logo {
@@ -98,7 +97,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 0.39em;
   margin: 22px 0;
   padding-inline-start: 20px;
 }
@@ -169,7 +168,7 @@
   inline-size: 100%;
   block-size: 100%;
   max-inline-size: 700px;
-  max-block-size: 700px;
+  aspect-ratio: 1 / 1;
 }
 
 .content-card__picture_label {
@@ -179,7 +178,7 @@
   z-index: 1;
   opacity: 0.5;
   color: var(--text-color, rgba(0, 0, 0, 1));
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
   text-transform: uppercase;
   text-shadow: -1px 0px var(--background-color, rgba(255, 255, 255, 1)),
@@ -217,6 +216,9 @@
 }
 
 .card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-inline-end: 2px; /*для красоты, чтобы в фокусе бордер не сливался с кнопкой*/
   border: 2px solid transparent;
   background-color: transparent;
@@ -269,7 +271,7 @@
 }
 
 .popup_window__title {
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -278,6 +280,7 @@
 .popup_window__button {
   margin-block-start: 30px;
   padding: 9px;
+  text-transform: uppercase;
   min-inline-size: 100%;
 }
 
