@@ -289,36 +289,36 @@
 /* ==============================================================*/
 
 /* ------------------- фильтры ------------------- */
-.filter_sepia {
+.filter_pre-start {
   filter: sepia(45%);
 }
 
-.filter_blur {
+.filter_first_start {
   filter: blur(1px);
 }
 
-.filter_grayscale {
+.filter_fail {
   filter: grayscale(1);
 }
 
-.filter_invert {
-  filter: invert(1);
-}
-
-.filter_saturate {
-  filter: saturate(160%);
-}
-
-.filter_brightness {
-  filter: brightness(180%);
-}
-
-.filter_contrast {
+.filter_ideal {
   filter: contrast(130%);
 }
 
-.filter_mishmash {
+.filter_around {
+  filter: brightness(170%) saturate(120%);
+}
+
+.filter_workaround {
+  filter: brightness(180%);
+}
+
+.filter_hands {
   filter: saturate(130%) brightness(170%) contrast(130%) blur(2px);
+}
+
+.filter_now_here {
+  filter: saturate(160%);
 }
 
 /* ------------------- состояния ------------------- */
