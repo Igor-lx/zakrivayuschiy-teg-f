@@ -310,15 +310,15 @@
 }
 
 .filter_brightness {
-  filter: brightness(200%);
+  filter: brightness(130%);
 }
 
 .filter_contrast {
-  filter: contrast(170%);
+  filter: contrast(130%);
 }
 
 .filter_mishmash {
-  filter: saturate(150%) brightness(150%) contrast(150%) blur(1px);
+  filter: saturate(130%) brightness(170%) contrast(130%) blur(2px);
 }
 
 /* ------------------- состояния ------------------- */
