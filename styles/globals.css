@@ -18,7 +18,7 @@ p,
 ul,
 ol,
 li,
-blockquote {
+q {
   margin: 0;
   padding: 0;
   font-weight: normal;
