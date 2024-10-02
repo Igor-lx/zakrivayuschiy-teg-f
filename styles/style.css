@@ -362,13 +362,9 @@ html {
 
 /* ----- навигация внутри блока при wv < 768 --- */
 
-.back-to-top_link_container {
-  margin: 0 25px 10px auto;
-  /*контейнер в разметке исключительно для семантики*/
-}
-
 .back-to-top_link {
   display: block;
+  margin: 0 25px 10px auto;
   border: 2px solid transparent;
   padding: 5px;
   font-family: var(--accent-font, fantasy);

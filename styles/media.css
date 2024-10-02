@@ -19,7 +19,7 @@
 /* =============================================================================== */
 
 @media (width >= 768px) {
-  .back-to-top_link_container {
+  .back-to-top_link {
     display: none;
   }
 
