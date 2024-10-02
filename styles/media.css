@@ -14,3 +14,20 @@
     max-block-size: 375px;
   }
 }
+
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+
+@media (width >= 768px) {
+  :root {
+  }
+
+  .back-to-top_link-container {
+    display: none;
+  }
+
+  .content-card__button-container {
+    padding: 0 25px 25px 0;
+  }
+}
