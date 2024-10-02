@@ -104,3 +104,15 @@
 .like-icon.is-liked .sparks {
   animation: sparks-visibility 0.3s ease-in 0.3s 1 alternate;
 }
+
+/* ======================== ADDITIONAL FUNCTIONALITY ============================= */
+/* =============================================================================== */
+
+@keyframes totop_arrow-swing {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(3px);
+  }
+}

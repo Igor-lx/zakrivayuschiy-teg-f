@@ -353,29 +353,18 @@
   box-shadow: 2px 2px 0 var(--text-color, rgba(0, 0, 0, 1));
 }
 
-/* ===============================================================================*/
-/* ===============================================================================*/
-/* ===============================================================================*/
+/* ======================== ADDITIONAL FUNCTIONALITY ============================= */
+/* =============================================================================== */
 
 html {
   scroll-behavior: smooth;
 }
 
-.back-to-top_button {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  display: none;
-  padding: 5px 5px;
-  text-decoration: none;
-}
+/* ----- навигация внутри блока при wv < 768 --- */
 
-.back-to-top_button_text {
-  font-size: 10px;
-}
-
-.back-to-top_link-container {
+.back-to-top_link_container {
   margin: 0 17px 10px auto;
+  /*контейнер в разметке исключительно для семантики*/
 }
 
 .back-to-top_link {
@@ -388,17 +377,9 @@ html {
   transition: opacity 0.3s ease, border-color 0.3s ease;
 }
 
-.uparrow_button {
-  letter-spacing: 3px;
-}
-
-.uparrow_link {
+.back-to-top_link_text {
   font-weight: 700;
   letter-spacing: 5px;
-}
-
-.back-to-top_link:focus {
-  outline: none;
 }
 
 .back-to-top_link:hover {
@@ -409,7 +390,32 @@ html {
   border-color: var(--text-color, rgba(0, 0, 0, 1));
 }
 
+.back-to-top_link:focus {
+  outline: none;
+}
+
 .back-to-top_link:focus-visible {
   border-color: var(--text-color, rgba(0, 0, 0, 1));
   outline: none;
+}
+
+/* ------ кнопка навигации  при wv > 768 ---- */
+
+.button_back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  padding: 5px 5px;
+}
+
+.button_back-to-top .button__text {
+  font-size: 10px;
+}
+
+.button_back-to-top .button__text:after {
+  content: "▲";
+  display: inline-block;
+  margin-inline-start: 2px;
+  animation: totop_arrow-swing 0.5s ease-in-out infinite alternate;
 }

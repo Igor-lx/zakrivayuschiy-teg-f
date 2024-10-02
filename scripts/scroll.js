@@ -1,5 +1,5 @@
 window.onscroll = function () {
-  var button = document.getElementById("backToTop");
+  var button = document.getElementById("back-to-top");
 
   if (window.innerWidth > 768) {
     if (
