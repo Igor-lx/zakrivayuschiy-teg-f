@@ -236,7 +236,7 @@
 .save-dialog__button {
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   margin-block-end: 105px;
-  min-block-size: 51px;
+  min-block-size: 55px;
 }
 
 .floppy-icon {
@@ -396,6 +396,7 @@ html {
   bottom: 20px;
   display: none;
   padding: 5px 5px;
+  min-block-size: 28px;
 }
 
 /* --------------- стрелочка  --------------- */
