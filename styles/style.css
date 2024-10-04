@@ -242,7 +242,6 @@
 .floppy-icon {
   mix-blend-mode: difference;
   max-inline-size: 21px;
-  max-block-size: 21px;
 }
 
 /*  ------------- Pop-Up window ------------ */
@@ -267,7 +266,6 @@
 .popup_window__floppy-icon {
   mix-blend-mode: difference;
   max-inline-size: 39px;
-  max-block-size: 39px;
 }
 
 .popup_window__title {
